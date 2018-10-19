@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{386E4F40-44A3-4D2C-A6E1-BD3CAF6145DD}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>wxdwm</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <ExecutablePath>D:\LIBS\TBB\bin\ia32\vc14;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <ExecutablePath>D:\LIBS\TBB\bin\ia32\vc14;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(VLD)\include;$(WXWIN)\lib\vc_lib\mswud;$(WXWIN)\include\;%BOOST%/;%TBB%/include/;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(WXWIN)\lib\vc_lib;$(VLD)\lib\Win32;;%TBB%/lib/ia32/vc14;%BOOST%/lib32-msvc-14.1/;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>wxbase31ud.lib;wxmsw31ud_core.lib;wxmsw31ud_aui.lib;wxpngd.lib;wxzlibd.lib;wxexpatd.lib;rpcrt4.lib;advapi32.lib;imagehlp.lib;comctl32.lib;vld.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(WXWIN)\lib\vc_lib\mswu;$(WXWIN)\include\;;%BOOST%/;%TBB%/include/;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(WXWIN)\lib\vc_lib;;%TBB%/lib/ia32/vc14;%BOOST%/lib32-msvc-14.1/;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>wxbase31u.lib;wxmsw31u_core.lib;wxmsw31u_aui.lib;wxpng.lib;wxzlib.lib;wxexpat.lib;rpcrt4.lib;advapi32.lib;imagehlp.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Common\grid\Grid.cpp" />
+    <ClCompile Include="Common\grid\GridView.cpp" />
+    <ClCompile Include="Common\std\Arguments.cpp" />
+    <ClCompile Include="Common\std\AtomicLocker.cpp" />
+    <ClCompile Include="Common\std\BinTree.cpp" />
+    <ClCompile Include="Common\std\Cache.cpp" />
+    <ClCompile Include="Common\std\LeazyNumber.cpp" />
+    <ClCompile Include="Common\std\NumberPair.cpp" />
+    <ClCompile Include="Common\std\Thread.cpp" />
+    <ClCompile Include="Common\std\AsyncWriter.cpp" />
+    <ClCompile Include="Common\vendors\json\json11.cpp" />
+    <ClCompile Include="Common\vendors\pipe\NamedPipeServer.cpp" />
+    <ClCompile Include="Common\vendors\pipe\PosixNamedPipe.cpp" />
+    <ClCompile Include="Common\vendors\pipe\WinNamedPipe.cpp" />
+    <ClCompile Include="Common\win\DwmHelper.cpp" />
+    <ClCompile Include="Common\win\ShellHook.cpp" />
+    <ClCompile Include="Common\win\WinEventHook.cpp" />
+    <ClCompile Include="Common\wx\Config.cpp" />
+    <ClCompile Include="Common\wx\Displays.cpp" />
+    <ClCompile Include="Common\wx\GridStorer.cpp" />
+    <ClCompile Include="Common\wx\Hotkeys.cpp" />
+    <ClCompile Include="Common\wx\NativeWindow.cpp" />
+    <ClCompile Include="Common\wx\WindowsList.cpp" />
+    <ClCompile Include="MainFrame.cpp" />
+    <ClCompile Include="PipeAPI.cpp" />
+    <ClCompile Include="WindowManager.cpp" />
+    <ClCompile Include="wxdwm.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Common\grid\Grid.h" />
+    <ClInclude Include="Common\grid\GridView.h" />
+    <ClInclude Include="Common\std\Arguments.h" />
+    <ClInclude Include="Common\std\AtomicLocker.h" />
+    <ClInclude Include="Common\std\BinTree.h" />
+    <ClInclude Include="Common\std\Cache.h" />
+    <ClInclude Include="Common\std\LeazyNumber.h" />
+    <ClInclude Include="Common\std\NumberPair.h" />
+    <ClInclude Include="Common\std\numbers.h" />
+    <ClInclude Include="Common\std\Singleton.h" />
+    <ClInclude Include="Common\std\Thread.h" />
+    <ClInclude Include="Common\std\AsyncWriter.h" />
+    <ClInclude Include="Common\vendors\IJson.h" />
+    <ClInclude Include="Common\vendors\json\json11.hpp" />
+    <ClInclude Include="Common\vendors\pipe\INamedPipe.h" />
+    <ClInclude Include="Common\vendors\pipe\NamedPipe.h" />
+    <ClInclude Include="Common\vendors\pipe\NamedPipeServer.h" />
+    <ClInclude Include="Common\vendors\pipe\PosixNamedPipe.h" />
+    <ClInclude Include="Common\vendors\pipe\WinNamedPipe.h" />
+    <ClInclude Include="Common\win\DwmHelper.h" />
+    <ClInclude Include="Common\win\ShellHook.h" />
+    <ClInclude Include="Common\win\WinEventHook.h" />
+    <ClInclude Include="Common\wx\Config.h" />
+    <ClInclude Include="Common\wx\Displays.h" />
+    <ClInclude Include="Common\wx\GridStorer.h" />
+    <ClInclude Include="Common\wx\Hotkeys.h" />
+    <ClInclude Include="Common\wx\NativeWindow.h" />
+    <ClInclude Include="Common\wx\WindowsList.h" />
+    <ClInclude Include="MainFrame.h" />
+    <ClInclude Include="PipeAPI.h" />
+    <ClInclude Include="WindowManager.h" />
+    <ClInclude Include="wxdwm.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\LICENSE" />
+    <None Include="..\README.md" />
+    <None Include="..\VERSION" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="MainFrame.cpp" />
+    <ClCompile Include="PipeAPI.cpp" />
+    <ClCompile Include="WindowManager.cpp" />
+    <ClCompile Include="wxdwm.cpp" />
+    <ClCompile Include="Common\grid\Grid.cpp">
+      <Filter>Common\grid</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\grid\GridView.cpp">
+      <Filter>Common\grid</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\std\AtomicLocker.cpp">
+      <Filter>Common\std</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\std\BinTree.cpp">
+      <Filter>Common\std</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\std\Cache.cpp">
+      <Filter>Common\std</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\std\LeazyNumber.cpp">
+      <Filter>Common\std</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\std\NumberPair.cpp">
+      <Filter>Common\std</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\win\ShellHook.cpp">
+      <Filter>Common\win</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\win\WinEventHook.cpp">
+      <Filter>Common\win</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\wx\Displays.cpp">
+      <Filter>Common\wx</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\wx\Hotkeys.cpp">
+      <Filter>Common\wx</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\wx\NativeWindow.cpp">
+      <Filter>Common\wx</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\wx\WindowsList.cpp">
+      <Filter>Common\wx</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\win\DwmHelper.cpp">
+      <Filter>Common\win</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\wx\GridStorer.cpp">
+      <Filter>Common\wx</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\vendors\pipe\NamedPipeServer.cpp">
+      <Filter>Common\vendors\pipe</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\vendors\pipe\PosixNamedPipe.cpp">
+      <Filter>Common\vendors\pipe</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\vendors\pipe\WinNamedPipe.cpp">
+      <Filter>Common\vendors\pipe</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\vendors\json\json11.cpp">
+      <Filter>Common\vendors\json</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\wx\Config.cpp">
+      <Filter>Common\wx</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\std\Thread.cpp">
+      <Filter>Common\std</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\std\AsyncWriter.cpp">
+      <Filter>Common\std</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\std\Arguments.cpp">
+      <Filter>Common\std</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MainFrame.h" />
+    <ClInclude Include="PipeAPI.h" />
+    <ClInclude Include="WindowManager.h" />
+    <ClInclude Include="wxdwm.h" />
+    <ClInclude Include="Common\grid\Grid.h">
+      <Filter>Common\grid</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\grid\GridView.h">
+      <Filter>Common\grid</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\std\AtomicLocker.h">
+      <Filter>Common\std</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\std\BinTree.h">
+      <Filter>Common\std</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\std\Cache.h">
+      <Filter>Common\std</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\std\LeazyNumber.h">
+      <Filter>Common\std</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\std\NumberPair.h">
+      <Filter>Common\std</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\win\ShellHook.h">
+      <Filter>Common\win</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\win\WinEventHook.h">
+      <Filter>Common\win</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\wx\Displays.h">
+      <Filter>Common\wx</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\wx\Hotkeys.h">
+      <Filter>Common\wx</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\wx\NativeWindow.h">
+      <Filter>Common\wx</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\wx\WindowsList.h">
+      <Filter>Common\wx</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\win\DwmHelper.h">
+      <Filter>Common\win</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\std\numbers.h">
+      <Filter>Common\std</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\std\Singleton.h">
+      <Filter>Common\std</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\wx\GridStorer.h">
+      <Filter>Common\wx</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\vendors\pipe\INamedPipe.h">
+      <Filter>Common\vendors\pipe</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\vendors\pipe\NamedPipe.h">
+      <Filter>Common\vendors\pipe</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\vendors\pipe\NamedPipeServer.h">
+      <Filter>Common\vendors\pipe</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\vendors\pipe\PosixNamedPipe.h">
+      <Filter>Common\vendors\pipe</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\vendors\pipe\WinNamedPipe.h">
+      <Filter>Common\vendors\pipe</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\vendors\json\json11.hpp">
+      <Filter>Common\vendors\json</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\wx\Config.h">
+      <Filter>Common\wx</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\std\Thread.h">
+      <Filter>Common\std</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\std\AsyncWriter.h">
+      <Filter>Common\std</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\vendors\IJson.h">
+      <Filter>Common\vendors</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\std\Arguments.h">
+      <Filter>Common\std</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{1adb1ecf-9b3c-4e04-bdca-04af2964ff22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\wx">
+      <UniqueIdentifier>{c57daae2-6839-4823-b9d6-2e21302a7be5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\win">
+      <UniqueIdentifier>{2f51a9da-5ee5-4f8f-84cf-efb65351ba6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\std">
+      <UniqueIdentifier>{2662cc5a-2493-472a-81ac-bf17d4a5e080}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\grid">
+      <UniqueIdentifier>{71484bdc-bc72-4818-8186-cd992d051f3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\vendors">
+      <UniqueIdentifier>{caccd69c-8d76-45d0-b2dd-b1cd7e82ce71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\vendors\pipe">
+      <UniqueIdentifier>{ae49dbec-6bfd-4cfe-a8ea-8157515dc76f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\vendors\json">
+      <UniqueIdentifier>{2ecb8182-96bb-4857-9b43-86d12f96f850}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\README.md" />
+    <None Include="..\VERSION" />
+    <None Include="..\LICENSE" />
+  </ItemGroup>
+</Project>
