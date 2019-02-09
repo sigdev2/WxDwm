@@ -109,6 +109,7 @@ Options for query:
     [optional] loadstoredjson, lj <ARG> - Load stored windows sets from 'json', its always run new instance of windows
 
 Options may be combinated, but has priority:
+
 help->pipe->toggledecoration->orientation->store->restore->restoreall->toggle->screenmode->arrange->reflectall->saveconfig->loadconfig->configjson->savestored->loadstored->loadstoredjson
 
 ## TODO by priority
